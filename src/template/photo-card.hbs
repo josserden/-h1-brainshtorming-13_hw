@@ -1,0 +1,30 @@
+{{#each this}}
+  <li class='photo-card col-6 col-sm-4'>
+    <img
+      class='img-fluid rounded'
+      src={{webformatURL}}
+      alt={{tags}}
+      width='300'
+      height='200'
+      loading='lazy'
+    />
+    <div class='info d-inline-flex justify-content-between'>
+      <p class='info-item badge bg-light text-dark rounded-pill'>
+        <i class='material-icons-round'>thumb_up_off_alt</i>
+        {{likes}}
+      </p>
+      <p class='info-item badge bg-light text-dark rounded-pill'>
+        <i class='material-icons-round'>visibility</i>
+        {{views}}
+      </p>
+      <p class='info-item badge bg-light text-dark rounded-pill'>
+        <i class='material-icons-round'>comments</i>
+        {{comments}}
+      </p>
+      <p class='info-item badge bg-light text-dark rounded-pill'>
+        <i class='material-icons-round'>downloads</i>
+        {{downloads}}
+      </p>
+    </div>
+  </li>
+{{/each}}
